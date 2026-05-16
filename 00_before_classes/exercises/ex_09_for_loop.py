@@ -1,3 +1,4 @@
+#first do 9 basic!!
 def main():
     expenses = [12.50, 8.99, 23.40, 5.00]
 

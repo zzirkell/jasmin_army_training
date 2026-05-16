@@ -115,7 +115,7 @@ Coffee total: 12.8
 Cake total: 9.0
 Full total: 21.8
 ```
-
+## Exercise 4 pro!!! Check the description inside, introduces more operations for calculations!!
 ---
 
 # Exercise 5: List basics
@@ -225,6 +225,7 @@ The customer receives a discount.
 
 # Exercise 9: For loop over a list
 
+### Exercise 9 basic first!!: first traverse through loop with range. The description is in file
 Files:
 
 - Example: `examples/example_09_for_loop.py`
@@ -242,6 +243,7 @@ Expense: 5.0
 Total expenses: 49.89
 Average expense: 12.4725
 ```
+Here the important concept is that we are iterationg throught the list. 
 
 ---
 

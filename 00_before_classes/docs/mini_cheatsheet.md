@@ -287,9 +287,63 @@ else:
 discount = is_student and order_total >= 20
 free_shipping = order_total >= 50 or has_coupon
 ```
+## For Loops with `range()`
 
+Use a `for` loop when you want to repeat code.
+
+```python
+for number in range(0, 6):
+    print(number)
+```
+
+Output:
+
+```text
+0
+1
+2
+3
+4
+5
+```
+
+Important: `range(0, 6)` stops before `6`.
+
+### Common patterns
+
+```python
+range(0, 5)       # 0, 1, 2, 3, 4
+range(1, 6)       # 1, 2, 3, 4, 5
+range(0, 11, 2)   # 0, 2, 4, 6, 8, 10
+range(5, 0, -1)   # 5, 4, 3, 2, 1
+```
+
+### Repeating code
+
+```python
+for i in range(0, 3):
+    print("Hello")
+```
+
+Output:
+
+```text
+Hello
+Hello
+Hello
+```
+
+### Adding numbers in a loop
+
+```python
+total = 0
+
+for number in range(1, 6):
+    total = total + number
+
+print(total)  # 15
+```
 ## For loop
-
 ```python
 total = 0
 for price in prices:
