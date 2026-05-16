@@ -3,10 +3,12 @@ def main():
     order_total = 25
     has_coupon = False
 
-    # TODO: Calculate discount_available.
-    # Rule: student and order >= 20, OR has coupon.
-    # TODO: Print the boolean.
-    # TODO: Use if/else to print the human-readable sentence.
+    discount_available = (is_student and order_total >= 20) or has_coupon
+    print("Discount available:", discount_available)
+
+    if discount_available == True:
+        print("The customer receives a discount.")
+
     pass
 
 

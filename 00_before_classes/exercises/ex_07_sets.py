@@ -1,9 +1,10 @@
 def main():
-    # TODO: Create registered_students and attended_students sets.
-    # TODO: Print registered_students.
-    # TODO: Print number registered.
-    # TODO: Print attended_students.
-    # TODO: Calculate and print missing_students.
+    registered_students = {"Anna", "Sofia", "Lena", "Sofia"}
+    attended_students = {"Sofia", "Lena"}
+    print("Registered students:", registered_students)
+    print("Number registered", len(registered_students))
+    print("Attended students:", attended_students)
+    print("Missing students:", registered_students - attended_students)
     pass
 
 

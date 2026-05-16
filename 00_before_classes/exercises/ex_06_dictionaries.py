@@ -1,8 +1,16 @@
 def main():
-    # TODO: Create the student dictionary from EXERCISE_DESCRIPTIONS.md.
-    # TODO: Print name, course, grade, and passed using dictionary keys.
-    # TODO: Update the grade to 82.
-    # TODO: Print the updated grade.
+    student = {
+        "name": "Sofia",
+        "course": "Software Engineering",
+        "grade": 76,
+        "passed": True
+    }
+    print("Student name:", student["name"])
+    print("Student course:", student["course"])
+    print("Student grade:", student["grade"])
+    print("Passed:", student["passed"])
+    student["grade"] = 82
+    print("Updated grade:", student["grade"])
     pass
 
 
