@@ -25,60 +25,36 @@ def main():
     print("Exercise 13: Calculations Pro")
     print("-----------------------------")
 
-    # TODO 1:
-    # Create a variable called total_items with value 23.
-    # Create a variable called box_size with value 5.
+    total_items = 23
+    box_size = 5
 
-    # TODO 2:
-    # Calculate how many boxes are needed exactly using normal division.
-    # Example: 23 / 5 = 4.6
-    # Store the result in a variable called exact_boxes.
+    exact_boxes = total_items / box_size
 
-    # TODO 3:
-    # Calculate how many full boxes can be filled using integer division.
-    # Example: 23 // 5 = 4
-    # Store the result in a variable called full_boxes.
+    full_boxes = total_items // box_size
 
-    # TODO 4:
-    # Calculate how many items are left using modulo.
-    # Example: 23 % 5 = 3
-    # Store the result in a variable called items_left.
+    items_left = total_items % box_size
 
-    # TODO 5:
-    # Print all three results using f-strings.
+    print(f"Exact boxes: {exact_boxes}\nFull boxes: {full_boxes}\nItems left: {items_left}\n")
 
-    # TODO 6:
-    # Create a variable called temperature with value -7.
-    # Use abs() to print the distance from zero.
-    # Expected idea: abs(-7) is 7
+    tempertaure = -7
+    print("Temperature distance from zero:", abs(tempertaure))
 
-    # TODO 7:
-    # Create a list called prices with these values:
-    # 12.99, 5.50, 3.25, 20.00
-    #
-    # Print:
-    # - the cheapest price using min()
-    # - the most expensive price using max()
-    # - the total price using sum()
+    prices = [12.99, 5.50, 3.25, 20.00]
+    print("\nCheapest price:", min(prices))
+    print("Most expensive price:", max(prices))
+    print("Total price:", sum(prices))
 
-    # TODO 8:
-    # Use round() to print the total price rounded to 1 digit after the decimal point.
+    print("Rounded total price:", round(sum(prices), 1))
 
-    # TODO 9:
-    # Use pow() to calculate 2 to the power of 3.
-    # Print the result.
-    # Expected result: 8
+    result = pow(2, 3)
+    print("\n", result)
 
-    # TODO 10:
-    # Bonus:
-    # Imagine a shop gives a 15% discount.
-    # Create:
-    # original_price = 80
-    # discount_percent = 15
-    #
-    # Calculate the discount amount.
-    # Calculate the final price after discount.
-    # Print both values.
+    original_price = 80
+    discount_percent = 15
+    discount_amount = original_price * discount_percent / 100
+    final_price = original_price - discount_amount
+    print("\nDiscount amount:", discount_amount)
+    print("Final price:", final_price)
 
     pass
 
