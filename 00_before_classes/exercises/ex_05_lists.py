@@ -1,9 +1,12 @@
 def main():
-    # TODO: Create courses list.
-    # TODO: Print all courses.
-    # TODO: Print first and last course by index.
-    # TODO: Print number of courses.
-    # TODO: Add "Accounting" and print the list again.
+    courses = ['Management', 'Marketing', 'Software Engineering']
+    print("All courses:", courses)
+    print("First course:", courses[0])
+    print("Last course:", courses[2])
+    print("Number of courses:", len(courses))
+    courses.append('Accounting')
+    print("After adding:", courses)
+
     pass
 
 
