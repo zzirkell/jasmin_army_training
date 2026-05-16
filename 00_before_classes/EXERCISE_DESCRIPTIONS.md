@@ -95,7 +95,7 @@ Price per item: 4.99
 Total price: 14.97
 ```
 
-Use f-strings for at least two lines.
+Use f-strings for at least two lines. (bruh, for any of them)
 
 ---
 
