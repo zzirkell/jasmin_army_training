@@ -1,7 +1,11 @@
 def main():
-    # TODO: Create customer_name, product_name, quantity, price_per_item.
-    # TODO: Print the order message.
-    # TODO: Calculate and print the total price.
+    customer_name = "Sofia"
+    product_name = "Notebook"
+    quantity = 3
+    price_per_item = 4.99
+
+    print(f"Hello {customer_name}!\nYou ordered {quantity} x {product_name}.")
+    print(f"Price per item: {price_per_item}\nTotal price: {price_per_item * quantity}")
     pass
 
 

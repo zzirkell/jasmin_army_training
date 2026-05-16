@@ -1,11 +1,17 @@
 def main():
     # TODO: Define and Initialize variables:
-    # employee name string with value Lena
-    # department name string with value Marketing
-    # age int variable with value 24
-    # salary per month float variable with value 5000.4
-    # boolean check if employee is full time with value True
+    name = "Lena"
+    department = "Marketing"
+    age = 24
+    salary = 3000.5
+    full_time = False
 
+    print("Employee profile")
+    print("Name:", name)
+    print("Department:", department)
+    print("Age:", age)
+    print("Monthly salary:", salary)
+    print("Full time:", full_time)
     # TODO: Print the employee profile using the variables.
     pass
 
