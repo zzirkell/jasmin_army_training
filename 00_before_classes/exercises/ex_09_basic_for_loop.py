@@ -21,68 +21,44 @@ def main():
     print("Exercise 09A: For Loops with Range")
     print("----------------------------------")
 
-    # TODO 1:
-    # Print numbers from 0 to 5 using range(0, 6).
-    #
-    # Expected output:
-    # 0
-    # 1
-    # 2
-    # 3
-    # 4
-    # 5
+    for number in range (0, 6):
+        print(number)
+    print()
 
-    # TODO 2:
-    # Print numbers from 1 to 10 using range(1, 11).
-
-    # TODO 3:
+    for number in range(1, 11):
+        print(number)
+    print()
     # Print the sentence "I am learning Python" 5 times.
-    #
-    # Hint:
-    # You can use range(0, 5).
+    for i in range (0, 5):
+        print("Your mama is gay")
+    print()
 
-    # TODO 4:
-    # Print numbers from 0 to 10, but only even numbers.
-    #
-    # Hint:
-    # You can use range(0, 11, 2).
+    for number in range(0, 11, 2):
+        print(number)
+    print()
 
-    # TODO 5:
-    # Print numbers from 10 down to 1.
-    #
-    # Hint:
-    # You can use range(10, 0, -1).
+    for number in range(10, 0, -1):
+        print(number)
+    print()
 
-    # TODO 6:
-    # Create a variable called total with value 0.
-    # Then use a for-loop to add all numbers from 1 to 5 to total.
-    # Print the result.
-    #
-    # Expected result:
-    # 15
+    total = 0
+    for number in range(1, 6):
+        total = total + number
+    print(total)
+    print()
 
-    # TODO 7:
-    # Create a variable called count with value 0.
-    # Use a for-loop that runs 4 times.
-    # Inside the loop, increase count by 1.
-    # After the loop, print count.
-    #
-    # Expected result:
-    # 4
+    count = 0
+    for i in range (0, 4):
+        count = count + 1
+    print(count)
+    print()
 
-    # TODO 8:
-    # Bonus:
-    # Create a variable called number with value 3.
-    # Use a for-loop to print the multiplication table for this number.
-    #
-    # Expected output:
-    # 3 x 1 = 3
-    # 3 x 2 = 6
-    # ...
-    # 3 x 10 = 30
+    number = 3
+    for multiplier in range (1, 11):
+        multiplication = number * multiplier
+        print(f"{number} x {multiplier} = {multiplication}")
 
     pass
-
 
 if __name__ == "__main__":
     main()
