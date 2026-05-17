@@ -126,62 +126,23 @@ def wait_until_user_stops_music():
 
 #STOP IGNORING HERE AND CHECK THE CODE BELOW
 def count_mood_tags(mood_tags):
-    """
-    mood_tags is a list of strings.
-
-    Example:
-    ["calm", "sad", "calm"]
-
-    Return a dictionary that counts how often each mood appears.
-
-    Example result:
-    {
-        "calm": 2,
-        "sad": 1
-    }
-    """
-
-    # TODO:
-    # Create an empty dictionary called counts.
-    # Loop through mood_tags.
-    # If the mood is already in counts, increase its value.
-    # Otherwise, set its value to 1.
-    # Return counts.
-
-    pass
-
+    mood_counts = {}
+    for mood in mood_tags:
+        if mood not in mood_counts:
+            mood_counts[mood] = 1
+        else:
+            mood_counts[mood] += 1
+    return mood_counts
 
 def calculate_average_line_length(line_lengths):
-    """
-    line_lengths is a list of numbers.
-
-    Example:
-    [20, 30, 25]
-
-    Return the average line length.
-    """
-
-    # TODO:
-    # Calculate total using sum() or a loop.
-    # Divide by len(line_lengths).
-    # Return the average.
-
-    pass
-
+    return sum(line_lengths) / len(line_lengths)
 
 def find_long_lines(line_lengths, minimum_length):
-    """
-    Return a list of all line lengths that are >= minimum_length.
-    """
-
-    # TODO:
-    # Create an empty list.
-    # Loop through line_lengths.
-    # Add only long enough lengths.
-    # Return the list.
-
-    pass
-
+    long_lines = []
+    for line in line_lengths:
+        if line >= minimum_length:
+            long_lines.append(line)
+    return long_lines
 
 def main():
     print("Mini Exam 03: Clear Eyes Playlist Mood Analyzer")
@@ -231,26 +192,26 @@ def main():
 
     unique_moods = set(mood_tags)
 
-    # print(f"Mood counts: {mood_counts}")
-    # print(f"Unique moods: {unique_moods}")
-    # print(f"Average line length: {round(average_length, 2)}")
-    # print(f"Long line lengths: {long_lines}")
+    print(f"Mood counts: {mood_counts}")
+    print(f"Unique moods: {unique_moods}")
+    print(f"Average line length: {round(average_length, 2)}")
+    print(f"Long line lengths: {long_lines}")
 
     print()
 
-    # if "clear" in unique_moods:
-    #     print("The text has a clear/seeing theme.")
+    if "clear" in unique_moods:
+        print("The text has a clear/seeing theme.")
 
-    # if "love" in unique_moods and "breaking" in unique_moods:
-    #     print("The text mixes love and breakup themes.")
+    if "love" in unique_moods and "breaking" in unique_moods:
+        print("The text mixes love and breakup themes.")
 
-    # if average_length >= 30:
-    #     print("The selected lines are quite long on average.")
-    # else:
-    #     print("The selected lines are rather short on average.")
+    if average_length >= 30:
+        print("The selected lines are quite long on average.")
+    else:
+        print("The selected lines are rather short on average.")
 
-    # if len(unique_moods) >= 5:
-    #     print("There are many different moods in this text.")
+    if len(unique_moods) >= 5:
+        print("There are many different moods in this text.")
 
     if music_started:
         wait_until_user_stops_music()
