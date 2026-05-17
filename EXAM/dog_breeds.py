@@ -23,6 +23,13 @@ def count_dogs_by_breed(dogs):
 
     Return a dictionary that counts how many dogs there are per breed.
     """
+    counts = {}
+    for dog in dogs:
+        if dog["breed"] not in counts:
+            counts[dog["breed"]] = 1
+        else:
+            counts[dog["breed"]] += 1
+    return counts
 
     # TODO:
     # Create an empty dictionary called counts.
@@ -31,45 +38,19 @@ def count_dogs_by_breed(dogs):
     # Count how often each breed appears.
     # Return counts.
 
-    pass
-
-
 def find_dogs_by_size(dogs, wanted_size):
-    """
-    Return a list with dog names where dog["size"] equals wanted_size.
-    """
-
-    # TODO:
-    # Create an empty list.
-    # Loop through dogs.
-    # If the dog's size matches wanted_size, append the dog's name.
-    # Return the list.
-
-    pass
-
+    dogs_by_size = []
+    for dog in dogs:
+        if dog["size"] == wanted_size:
+            dogs_by_size.append(dog["name"])
+    return dogs_by_size
 
 def collect_unique_temperaments(dogs):
-    """
-    Each dog has a list of temperaments.
-
-    Example:
-    {
-        "name": "Milo",
-        "temperaments": ["friendly", "curious"]
-    }
-
-    Return a set of all unique temperaments.
-    """
-
-    # TODO:
-    # Create an empty set.
-    # Loop through dogs.
-    # For each dog, loop through dog["temperaments"].
-    # Add each temperament to the set.
-    # Return the set.
-
-    pass
-
+    unique_temperaments = set()
+    for dog in dogs:
+        for temperament in dog["temperaments"]:
+            unique_temperaments.add(temperament)
+    return unique_temperaments
 
 def main():
     print("Mini Exam 05: Dog Breed Helper")
