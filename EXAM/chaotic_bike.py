@@ -12,62 +12,21 @@ No classes yet.
 
 
 def calculate_total_repair_cost(repairs):
-    """
-    repairs is a dictionary.
-
-    Example:
-    {
-        "brakes": 40,
-        "chain": 25
-    }
-
-    Return the total repair cost.
-    """
-
-    # TODO:
-    # Create total = 0.
-    # Loop through the repair costs.
-    # Add each cost to total.
-    # Return total.
-
-    pass
-
+    total_cost = 0
+    for key, value in repairs.items():
+        total_cost += value
+    return total_cost
 
 def find_critical_problems(problem_levels, minimum_level):
-    """
-    problem_levels is a dictionary.
-
-    Example:
-    {
-        "brakes": 10,
-        "bell": 2
-    }
-
-    Return a list of problems where the level is >= minimum_level.
-    """
-
-    # TODO:
-    # Create an empty list.
-    # Loop through problem_levels using .items().
-    # Add critical problem names to the list.
-    # Return the list.
-
-    pass
+    critical_problems = []
+    for key, value in problem_levels.items():
+        if value >= minimum_level:
+            critical_problems.append(key)
+    return critical_problems
 
 
 def should_replace_bike(total_cost, bike_value):
-    """
-    Return True if repair cost is more than 50% of the bike value.
-    Otherwise return False.
-    """
-
-    # TODO:
-    # Calculate half of the bike value.
-    # Return True if total_cost is greater than that.
-    # Otherwise return False.
-
-    pass
-
+    return total_cost > bike_value * 0.5
 
 def main():
     print("Mini Exam 04: The Chaotic Bike Repair Decision")
