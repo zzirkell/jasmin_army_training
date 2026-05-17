@@ -12,62 +12,21 @@ No classes yet.
 
 
 def calculate_total_food(food_amounts):
-    """
-    food_amounts is a dictionary.
-
-    Example:
-    {
-        "cucumber": 40,
-        "pepper": 30,
-        "salad": 50
-    }
-
-    Return the total amount of food.
-    """
-
-    # TODO:
-    # Create total = 0.
-    # Loop through the values in food_amounts.
-    # Add each amount to total.
-    # Return total.
-
-    pass
-
+    total_food = 0
+    for values in food_amounts.values():
+        total_food += values
+    return total_food
 
 def find_favorite_foods(preferences, minimum_score):
-    """
-    preferences is a dictionary.
-
-    Example:
-    {
-        "cucumber": 10,
-        "pepper": 8,
-        "carrot": 4
-    }
-
-    Return a list with all foods where the score is >= minimum_score.
-    """
-
-    # TODO:
-    # Create an empty list called favorites.
-    # Loop through the dictionary using .items().
-    # If the score is high enough, append the food name.
-    # Return favorites.
-
-    pass
+    favorites = []
+    for key, value in preferences.items():
+        if value >= minimum_score:
+            favorites.append(key)
+    return favorites
 
 
 def is_food_plan_enough(total_food, required_food):
-    """
-    Return True if total_food is enough.
-    Otherwise return False.
-    """
-
-    # TODO:
-    # Compare total_food and required_food.
-
-    pass
-
+    return total_food >= required_food
 
 def main():
     print("Mini Exam 01: Guinea Pig Food Planner")
