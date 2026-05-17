@@ -1,6 +1,6 @@
 def main():
     savings = 0
-    weekly_saving = 15
+    weekly_saving = 16
     target = 60
     week = 0
 
