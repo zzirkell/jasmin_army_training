@@ -1,4 +1,5 @@
 def is_passing(grade):
+    return grade >= 50
     # TODO: Return True if grade is at least 50, otherwise False.
     pass
 
@@ -13,10 +14,13 @@ def main():
         "Anna": 76
     }
 
-    # TODO: Make a set from students to remove duplicates.
-    # TODO: Check if the course is full.
-    # TODO: Print course name, number of unique students, and course_full.
-    # TODO: Loop over grades and print whether each student passed.
+    student_list = set(students)
+    course_full = len(student_list) == max_students
+    print(f"Course: {course_name}\nUnique students: {len(student_list)}\nCourse full: {course_full}")
+
+    for key, value in grades.items():
+        print(f"{key} passed: {is_passing(value)}")
+
     pass
 
 
