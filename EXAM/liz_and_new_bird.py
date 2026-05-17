@@ -12,57 +12,20 @@ No classes yet.
 
 
 def calculate_total_minutes(practice_minutes):
-    """
-    practice_minutes is a list of numbers.
-
-    Example:
-    [30, 45, 20]
-
-    Return the total number of practice minutes.
-    """
-
-    # TODO:
-    # Create total = 0.
-    # Loop through practice_minutes.
-    # Add every number to total.
-    # Return total.
-
-    pass
-
+    total_minutes = 0
+    for minute in practice_minutes:
+        total_minutes += minute
+    return total_minutes
 
 def find_difficult_pieces(piece_difficulties, minimum_difficulty):
-    """
-    piece_difficulties is a dictionary.
-
-    Example:
-    {
-        "solo": 9,
-        "duet": 6
-    }
-
-    Return a list of piece names where difficulty is >= minimum_difficulty.
-    """
-
-    # TODO:
-    # Create an empty list.
-    # Loop through the dictionary using .items().
-    # Add difficult pieces to the list.
-    # Return the list.
-
-    pass
-
+    difficult_pieces = []
+    for piece, difficulty in piece_difficulties.items():
+        if difficulty >= minimum_difficulty:
+            difficult_pieces.append(piece)
+    return difficult_pieces
 
 def has_practiced_enough(total_minutes, target_minutes):
-    """
-    Return True if total_minutes is >= target_minutes.
-    Otherwise return False.
-    """
-
-    # TODO:
-    # Compare total_minutes and target_minutes.
-
-    pass
-
+    return total_minutes >= target_minutes
 
 def main():
     print("Mini Exam 02: Liz and the Blue Bird Practice Tracker")
