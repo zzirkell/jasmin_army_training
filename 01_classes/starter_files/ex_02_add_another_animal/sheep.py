@@ -1,17 +1,15 @@
 class Sheep:
     def __init__(self, name):
-        # TODO: store name, eyes, legs, speed
-        # Suggested: eyes=2, legs=4, speed=3
-        pass
+        self.name = name
+        self.eyes = 2
+        self.legs = 4
+        self.speed = 3
 
     def baa(self):
-        # TODO: return "baa"
-        pass
+        return "baa"
 
     def run(self):
-        # TODO: return speed
-        pass
+        return self.speed
 
     def describe(self):
-        # TODO: return sentence with name, eyes, legs, speed
-        pass
+        return f"{self.name} has {self.eyes} eyes, {self.legs} legs and speed {self.speed}."

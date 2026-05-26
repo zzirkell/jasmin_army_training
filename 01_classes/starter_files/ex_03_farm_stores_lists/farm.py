@@ -1,21 +1,24 @@
 class Farm:
     def __init__(self, name):
         self.name = name
-        # TODO: create self.cows and self.sheep as empty lists
-        pass
+        self.cows = []
+        self.sheep = []
 
     def add_cow(self, cow):
-        # TODO: append cow
-        pass
+        self.cows.append(cow)
 
     def add_sheep(self, sheep):
-        # TODO: append sheep
-        pass
+        self.sheep.append(sheep)
 
     def make_cows_moo(self):
-        # TODO: return list of moo sounds
-        pass
+        moos = []
+        for cow in self.cows:
+            moos.append("moo")
+        return moos
+
 
     def make_sheep_baa(self):
-        # TODO: return list of baa sounds
-        pass
+        baas = []
+        for sheep in self.sheep:
+            baas.append("baa")
+        return baas

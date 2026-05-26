@@ -1,17 +1,15 @@
 class Cow:
     def __init__(self, name):
-        # TODO: store name, eyes, legs, speed
-        # Suggested: eyes=2, legs=4, speed=4
-        pass
+        self.name = name
+        self.eyes = 2
+        self.legs = 4
+        self.speed = 4
 
     def moo(self):
-        # TODO: return "moo"
-        pass
+        return "moo"
 
     def run(self):
-        # TODO: return speed
-        pass
+        return self.speed
 
     def describe(self):
-        # TODO: return sentence with name, eyes, legs, speed
-        pass
+        return f"{self.name} has {self.eyes} eyes, {self.legs} legs and a speed of {self.speed}."
