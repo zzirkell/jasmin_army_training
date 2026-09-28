@@ -1,6 +1,6 @@
 from cow import Cow
 from sheep import Sheep
-from your_animal import YourAnimal
+from your_animal import Pigeon
 from farm import Farm
 
 
@@ -9,6 +9,7 @@ def main():
     farm = Farm("Creative Farm")
     farm.add_animal(Cow("Bonya"))
     farm.add_animal(Sheep("Cloud"))
+    farm.add_animal(Pigeon("Clara"))
 
     # TODO: add your animal
     # farm.add_animal(YourAnimal("Rex"))

@@ -1,7 +1,7 @@
 # TODO: import ABC and abstractmethod from abc
+from abc import ABC, abstractmethod
 
-
-class Animal:
+class Animal(ABC):
     def __init__(self, name, eyes, legs, speed):
         self.name = name
         self.eyes = eyes
@@ -12,6 +12,7 @@ class Animal:
         return self.speed
 
     # TODO: make this method abstract
+    @abstractmethod
     def make_sound(self):
         pass
 

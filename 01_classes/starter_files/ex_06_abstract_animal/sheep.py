@@ -6,5 +6,6 @@ class Sheep(Animal):
         super().__init__(name, eyes=2, legs=4, speed=3)
 
     def make_sound(self):
+        return "baa"
         # TODO: return "baa"
         pass

@@ -1,7 +1,8 @@
 from abc import ABC, abstractmethod
 # TODO: import Movable from movable
+from movable import Movable
 
-class Animal(ABC):
+class Animal(Movable, ABC):
     def __init__(self, name, eyes, legs, speed):
         self.name = name
         self.eyes = eyes
@@ -9,6 +10,7 @@ class Animal(ABC):
         self.speed = speed
 
     def move(self):
+        return f"{self.name} moves with {self.speed} speed."
         # TODO: return movement sentence
         pass
 
